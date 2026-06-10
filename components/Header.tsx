@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { cities } from "@/lib/cities";
 import { BRAND } from "@/lib/site";
 import { ChevronDownIcon, CloseIcon, MenuIcon } from "./Icons";
+import Logo from "./Logo";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -34,13 +35,7 @@ export default function Header() {
       <div className="container-x flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-brand text-white md:h-10 md:w-10">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11M5 11h14v6h-2M5 11v6h2m0 0h10" />
-              <circle cx="7.5" cy="17" r="1.5" />
-              <circle cx="16.5" cy="17" r="1.5" />
-            </svg>
-          </span>
+          <Logo size={42} />
           <span className="text-lg font-extrabold tracking-tight text-ink md:text-xl">
             {BRAND}
           </span>

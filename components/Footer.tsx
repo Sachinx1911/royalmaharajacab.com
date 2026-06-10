@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BRAND, site } from "@/lib/site";
+import Logo from "./Logo";
 import {
   FacebookIcon,
   GoogleIcon,
@@ -15,13 +16,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <Link href="/" className="flex items-center gap-2.5">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-brand text-white">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11M5 11h14v6h-2M5 11v6h2m0 0h10" />
-                <circle cx="7.5" cy="17" r="1.5" />
-                <circle cx="16.5" cy="17" r="1.5" />
-              </svg>
-            </span>
+            <Logo size={44} />
             <span className="text-lg font-extrabold">{BRAND}</span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
