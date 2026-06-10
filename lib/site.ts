@@ -1,5 +1,8 @@
 export const BRAND = "Royal Maharaja Cab";
 
+// Google Analytics 4 Measurement ID
+export const GA_MEASUREMENT_ID = "G-9BLDLG3YSE";
+
 export const site = {
   brand: BRAND,
   legalName: "Royal Maharaja Cab Ltd.",
