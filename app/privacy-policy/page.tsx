@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Privacy Policy" updated="June 2025">
+    <LegalPage title="Privacy Policy" updated="June 2026">
       <p>
         {BRAND} respects your privacy and is committed to protecting the personal information you
         share with us. This Privacy Policy explains what we collect, how we use it, and the choices

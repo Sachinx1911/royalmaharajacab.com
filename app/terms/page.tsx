@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <LegalPage title="Terms of Use" updated="June 2025">
+    <LegalPage title="Terms of Use" updated="June 2026">
       <p>
         Welcome to {BRAND}. By accessing our website and booking a cab through us, you agree to the
         following Terms of Use. Please read them carefully before using our services.

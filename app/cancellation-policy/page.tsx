@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function CancellationPage() {
   return (
-    <LegalPage title="Refunds & Cancellation Policy" updated="June 2025">
+    <LegalPage title="Refunds & Cancellation Policy" updated="June 2026">
       <p>
         At {BRAND}, we aim to make your travel planning as flexible and transparent as possible.
         This policy explains how cancellations and refunds are handled for bookings made with us.
