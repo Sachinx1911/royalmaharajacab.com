@@ -5,11 +5,11 @@ import { BRAND, site } from "@/lib/site";
 export default function CTA() {
   return (
     <section className="container-x pb-4 pt-2">
-      <Reveal className="overflow-hidden rounded-3xl bg-brand px-6 py-12 text-center text-ink sm:px-10 md:py-16">
+      <Reveal className="overflow-hidden rounded-3xl bg-brand px-6 py-12 text-center text-white sm:px-10 md:py-16">
         <h2 className="mx-auto max-w-3xl text-2xl font-extrabold sm:text-3xl md:text-4xl">
           Connect with {BRAND} Today
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-ink/80">
+        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/85">
           Experience the convenience of premium cab rentals with {BRAND}, trusted by thousands
           across Maharashtra. Whether you&apos;re looking for budget-friendly options or premium
           vehicles, we&apos;re here to help make every journey memorable. Contact us today to book

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { cities } from "@/lib/cities";
 import { BRAND, site } from "@/lib/site";
 import {
   FacebookIcon,
@@ -12,11 +11,11 @@ import {
 export default function Footer() {
   return (
     <footer className="mt-20 bg-ink text-white">
-      <div className="container-x grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="container-x grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-3">
         {/* Brand */}
         <div>
           <Link href="/" className="flex items-center gap-2.5">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-brand text-ink">
+            <span className="grid h-10 w-10 place-items-center rounded-full bg-brand text-white">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11M5 11h14v6h-2M5 11v6h2m0 0h10" />
                 <circle cx="7.5" cy="17" r="1.5" />
@@ -29,20 +28,6 @@ export default function Footer() {
             Your trusted cab service for seamless journeys across Maharashtra. One-way drops,
             outstation trips, airport transfers and more.
           </p>
-        </div>
-
-        {/* Cities */}
-        <div>
-          <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-brand">Cities</h3>
-          <ul className="space-y-2.5 text-sm text-white/70">
-            {cities.map((c) => (
-              <li key={c.slug}>
-                <Link href={`/locations/${c.slug}`} className="transition-colors hover:text-white">
-                  Premium Cabs in {c.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
         </div>
 
         {/* Company */}
@@ -79,7 +64,7 @@ export default function Footer() {
             <a
               href={`mailto:${site.email}`}
               aria-label="Email"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand hover:text-ink"
+              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
             >
               <MailIcon width={20} height={20} />
             </a>
@@ -88,7 +73,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Google Review"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand hover:text-ink"
+              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
             >
               <GoogleIcon width={20} height={20} />
             </a>
@@ -97,7 +82,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand hover:text-ink"
+              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
             >
               <InstagramIcon width={20} height={20} />
             </a>
@@ -106,7 +91,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand hover:text-ink"
+              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
             >
               <YoutubeIcon width={20} height={20} />
             </a>
@@ -115,7 +100,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand hover:text-ink"
+              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
             >
               <FacebookIcon width={20} height={20} />
             </a>

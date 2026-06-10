@@ -14,7 +14,7 @@ export default function Hero({
         className="pointer-events-none absolute inset-0 opacity-90"
         style={{
           background:
-            "radial-gradient(900px 420px at 12% -10%, rgba(122,201,67,0.28), transparent 60%), radial-gradient(700px 380px at 95% 10%, rgba(122,201,67,0.18), transparent 55%)",
+            "radial-gradient(900px 420px at 12% -10%, rgba(255,107,0,0.30), transparent 60%), radial-gradient(700px 380px at 95% 10%, rgba(255,107,0,0.18), transparent 55%)",
         }}
       />
       <div className="container-x relative grid items-center gap-10 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr]">

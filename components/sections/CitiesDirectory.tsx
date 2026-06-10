@@ -18,7 +18,7 @@ export default function CitiesDirectory({ activeSlug }: { activeSlug?: string })
           <Reveal key={c.slug} delay={(i % 3) * 70}>
             <Link
               href={`/locations/${c.slug}`}
-              className={`flex items-center gap-3 rounded-2xl border p-5 transition-all hover:-translate-y-1 hover:border-brand hover:shadow-[0_12px_36px_rgba(122,201,67,0.16)] ${
+              className={`flex items-center gap-3 rounded-2xl border p-5 transition-all hover:-translate-y-1 hover:border-brand hover:shadow-[0_12px_36px_rgba(255,107,0,0.16)] ${
                 activeSlug === c.slug
                   ? "border-brand bg-brand/10"
                   : "border-mist-2 bg-white"

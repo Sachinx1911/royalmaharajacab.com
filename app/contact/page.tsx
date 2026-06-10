@@ -73,7 +73,7 @@ export default function ContactPage() {
             <div className="h-full min-h-[320px] overflow-hidden rounded-2xl border border-mist-2">
               <iframe
                 title={`${BRAND} location`}
-                src="https://www.google.com/maps?q=Wadgaon+Budruk+Pune+Maharashtra+411041&output=embed"
+                src="https://www.google.com/maps?q=Sector+12+Kalamboli+Navi+Mumbai+Maharashtra+410218&output=embed"
                 className="h-full min-h-[320px] w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

@@ -5,10 +5,10 @@ export const site = {
   legalName: "Royal Maharaja Cab Ltd.",
   automotiveName: "Royal Maharaja Automotive Ltd.",
   email: "royalmaharajacab@gmail.com",
-  phone: "+91 88063 01039",
-  phoneHref: "+918806301039",
+  phone: "+91 75585 49538",
+  phoneHref: "+917558549538",
   address:
-    "Royal Maharaja Cab, Lane 9 Jijau Nagar, Jadhav Nagar Rd, near Dighe Tower, Wadgaon Budruk, Pune, Maharashtra 411041",
+    "Royal Maharaja Cab, Sector 12, Kalamboli, Navi Mumbai, Maharashtra 410218",
   social: {
     instagram: "https://www.instagram.com/",
     youtube: "https://www.youtube.com/",

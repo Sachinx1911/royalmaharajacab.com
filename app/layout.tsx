@@ -67,10 +67,10 @@ export default function RootLayout({
     areaServed: "Maharashtra, India",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Lane 9 Jijau Nagar, Jadhav Nagar Rd, Wadgaon Budruk",
-      addressLocality: "Pune",
+      streetAddress: "Sector 12, Kalamboli",
+      addressLocality: "Navi Mumbai",
       addressRegion: "Maharashtra",
-      postalCode: "411041",
+      postalCode: "410218",
       addressCountry: "IN",
     },
     aggregateRating: {

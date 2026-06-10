@@ -21,9 +21,9 @@ export default function WhyChooseUs() {
           <Reveal
             key={f.title}
             delay={(i % 3) * 80}
-            className="group rounded-2xl border border-mist-2 bg-white p-6 transition-all hover:-translate-y-1 hover:border-brand hover:shadow-[0_14px_40px_rgba(122,201,67,0.18)]"
+            className="group rounded-2xl border border-mist-2 bg-white p-6 transition-all hover:-translate-y-1 hover:border-brand hover:shadow-[0_14px_40px_rgba(255,107,0,0.18)]"
           >
-            <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand/15 text-brand transition-colors group-hover:bg-brand group-hover:text-ink">
+            <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand/15 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
               <IconByName name={f.icon} width={24} height={24} />
             </span>
             <h3 className="mt-5 text-lg font-bold text-ink">{f.title}</h3>

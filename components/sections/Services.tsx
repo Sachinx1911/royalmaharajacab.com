@@ -23,7 +23,7 @@ export default function Services() {
             delay={(i % 3) * 80}
             className="rounded-2xl border border-white/10 bg-white/5 p-6 transition-all hover:-translate-y-1 hover:border-brand/60"
           >
-            <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand text-ink">
+            <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand text-white">
               <IconByName name={s.icon} width={24} height={24} />
             </span>
             <h3 className="mt-5 text-lg font-bold">{s.title}</h3>

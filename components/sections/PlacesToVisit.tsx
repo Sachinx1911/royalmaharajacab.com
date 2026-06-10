@@ -20,9 +20,9 @@ export default function PlacesToVisit({
           <Reveal
             key={p.name}
             delay={(i % 3) * 70}
-            className="group rounded-2xl border border-mist-2 bg-white p-6 transition-all hover:-translate-y-1 hover:border-brand hover:shadow-[0_12px_36px_rgba(122,201,67,0.16)]"
+            className="group rounded-2xl border border-mist-2 bg-white p-6 transition-all hover:-translate-y-1 hover:border-brand hover:shadow-[0_12px_36px_rgba(255,107,0,0.16)]"
           >
-            <span className="grid h-11 w-11 place-items-center rounded-xl bg-brand/15 text-brand transition-colors group-hover:bg-brand group-hover:text-ink">
+            <span className="grid h-11 w-11 place-items-center rounded-xl bg-brand/15 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
               <PinIcon width={22} height={22} />
             </span>
             <h3 className="mt-4 text-lg font-bold text-ink">{p.name}</h3>
