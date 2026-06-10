@@ -47,6 +47,10 @@ export default function Header() {
             Home
           </Link>
 
+          <Link href="/routes" className="text-[15px] font-medium text-ink-soft transition-colors hover:text-ink">
+            Routes
+          </Link>
+
           <div
             className="relative"
             onMouseEnter={() => setLocOpen(true)}
@@ -104,6 +108,9 @@ export default function Header() {
           <nav className="container-x flex flex-col gap-1 py-4">
             <Link href="/" className="rounded-lg px-2 py-3 font-medium text-ink" onClick={() => setOpen(false)}>
               Home
+            </Link>
+            <Link href="/routes" className="rounded-lg px-2 py-3 font-medium text-ink" onClick={() => setOpen(false)}>
+              Routes
             </Link>
             <button
               type="button"

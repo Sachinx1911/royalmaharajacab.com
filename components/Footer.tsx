@@ -1,13 +1,7 @@
 import Link from "next/link";
 import { BRAND, site } from "@/lib/site";
 import Logo from "./Logo";
-import {
-  FacebookIcon,
-  GoogleIcon,
-  InstagramIcon,
-  MailIcon,
-  YoutubeIcon,
-} from "./Icons";
+import { MailIcon, PhoneIcon } from "./Icons";
 
 export default function Footer() {
   return (
@@ -52,58 +46,28 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Social */}
+        {/* Contact */}
         <div>
-          <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-brand">Social</h3>
-          <div className="flex flex-wrap gap-3">
-            <a
-              href={`mailto:${site.email}`}
-              aria-label="Email"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
-            >
+          <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-brand">Contact</h3>
+          <a
+            href={`mailto:${site.email}`}
+            className="flex items-center gap-3 text-sm text-white/70 transition-colors hover:text-white"
+          >
+            <span className="grid h-10 w-10 place-items-center rounded-full bg-white/10">
               <MailIcon width={20} height={20} />
-            </a>
-            <a
-              href={site.social.googleReview}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Google Review"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
-            >
-              <GoogleIcon width={20} height={20} />
-            </a>
-            <a
-              href={site.social.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
-            >
-              <InstagramIcon width={20} height={20} />
-            </a>
-            <a
-              href={site.social.youtube}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="YouTube"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
-            >
-              <YoutubeIcon width={20} height={20} />
-            </a>
-            <a
-              href={site.social.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
-            >
-              <FacebookIcon width={20} height={20} />
-            </a>
-          </div>
-          <p className="mt-5 text-sm text-white/70">{site.email}</p>
-          <a href={`tel:${site.phoneHref}`} className="mt-1 block text-sm text-white/70 transition-colors hover:text-white">
+            </span>
+            {site.email}
+          </a>
+          <a
+            href={`tel:${site.phoneHref}`}
+            className="mt-3 flex items-center gap-3 text-sm text-white/70 transition-colors hover:text-white"
+          >
+            <span className="grid h-10 w-10 place-items-center rounded-full bg-white/10">
+              <PhoneIcon width={20} height={20} />
+            </span>
             {site.phone}
           </a>
+          <p className="mt-4 text-sm leading-relaxed text-white/70">{site.address}</p>
         </div>
       </div>
 

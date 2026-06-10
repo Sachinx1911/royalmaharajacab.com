@@ -237,3 +237,22 @@ export const cities: City[] = [
 
 export const getCity = (slug: string) => cities.find((c) => c.slug === slug);
 export const citySlugs = cities.map((c) => c.slug);
+
+export const cityFaqs = (c: City) => [
+  {
+    q: `Do you provide one-way cabs in ${c.name}?`,
+    a: `Yes. ${BRAND} offers one-way drops from ${c.name} to cities across Maharashtra, as well as round trips and local full-day rentals. You pay only for the one-way journey — no return fare.`,
+  },
+  {
+    q: `How do I book a cab in ${c.name}?`,
+    a: `Use the booking form on this page to select your pickup and drop locations, or call our 24/7 support line. We confirm the driver and cab details before your pickup anywhere in ${c.name}.`,
+  },
+  {
+    q: `Which places can I visit in ${c.name} with your cabs?`,
+    a: `Popular sightseeing spots include ${c.places.slice(0, 3).map((p) => p.name).join(", ")} and more. Book a full-day local cab and our driver will plan the route for you.`,
+  },
+  {
+    q: `Do you provide airport pickup and drop in ${c.name}?`,
+    a: `Yes. We provide airport transfers to and from ${c.name}, with flight-time tracking for pickups so your cab is waiting even if your flight is early or delayed.`,
+  },
+];

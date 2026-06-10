@@ -5,9 +5,10 @@ import AboutStats from "@/components/sections/AboutStats";
 import Testimonials from "@/components/sections/Testimonials";
 import PlacesToVisit from "@/components/sections/PlacesToVisit";
 import CitiesDirectory from "@/components/sections/CitiesDirectory";
+import FaqSection from "@/components/sections/FaqSection";
 import CTA from "@/components/sections/CTA";
 import Reveal from "@/components/Reveal";
-import { citySlugs, getCity } from "@/lib/cities";
+import { cityFaqs, citySlugs, getCity } from "@/lib/cities";
 import { BRAND } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -67,6 +68,7 @@ export default async function CityPage({
       </section>
 
       <PlacesToVisit heading={data.placesHeading} places={data.places} />
+      <FaqSection heading={`Cab Service in ${data.name} — FAQs`} faqs={cityFaqs(data)} />
       <CitiesDirectory activeSlug={data.slug} />
       <CTA />
     </>

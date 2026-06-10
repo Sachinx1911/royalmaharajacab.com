@@ -1,10 +1,11 @@
+import type { ReactNode } from "react";
 import BookingForm from "@/components/BookingForm";
 import { BRAND } from "@/lib/site";
 
 export default function Hero({
   title,
 }: {
-  title?: string;
+  title?: ReactNode;
 }) {
   return (
     <section className="relative overflow-hidden bg-ink text-white">

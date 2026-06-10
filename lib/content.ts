@@ -114,6 +114,33 @@ export const steps: Step[] = [
   },
 ];
 
+export const homeFaqs = [
+  {
+    q: `What services does ${BRAND} offer?`,
+    a: `${BRAND} provides one-way intercity drops, outstation round-trips, airport pickups and drops, and local cab rentals across Maharashtra — including Pune, Mumbai, Navi Mumbai, Nashik, Shirdi, Mahabaleshwar, Kolhapur, Satara and Ratnagiri.`,
+  },
+  {
+    q: `How do I book a cab with ${BRAND}?`,
+    a: `Use the booking form on this page to select your pickup and drop locations, or call our 24/7 support line. We confirm your booking with driver and cab details before pickup.`,
+  },
+  {
+    q: "Are there any hidden charges in your fares?",
+    a: "No. We believe in complete transparency — the fare quoted at booking is what you pay. Tolls, parking and state taxes are communicated upfront and billed at actuals.",
+  },
+  {
+    q: "Do you operate 24/7?",
+    a: "Yes. Our cabs and customer support are available round the clock, including early-morning airport pickups and late-night drops.",
+  },
+  {
+    q: "Do I have to pay return fare on a one-way trip?",
+    a: "No. With our one-way cab service you pay only for the distance you travel — no return fare, unlike traditional round-trip-only operators.",
+  },
+  {
+    q: "Can I book a cab for the same day?",
+    a: "Yes, same-day bookings are accepted subject to cab availability. For guaranteed availability, especially on weekends and holidays, we recommend booking a few hours in advance.",
+  },
+];
+
 export type Testimonial = {
   name: string;
   when: string;
